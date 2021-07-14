@@ -16,7 +16,7 @@
                     <ul class="flex-card-list">
                         <li>
                           <div class="flex-card">
-                            <div class="card-img"><img src="http://placehold.it/350x150"></div>
+                            <div class="card-img"><img src="{{ asset('images/users/hritik.jpg') }}"></div>
                             <div class="card-content">
                               <h3>First</h3>
                               <div class="text">
@@ -28,7 +28,7 @@
                         </li>
                         <li>
                           <div class="flex-card">
-                            <div class="card-img"><img src="http://placehold.it/350x150"></div>
+                            <div class="card-img"><img src="{{ asset('images/users/2.png') }}"></div>
                             <div class="card-content">
                               <h3>First</h3>
                               <div class="text">
@@ -41,7 +41,7 @@
                         </li>
                         <li>
                           <div class="flex-card">
-                            <div class="card-img"><img src="http://placehold.it/350x150"></div>
+                            <div class="card-img"><img src="{{ asset('images/users/genu.jpg') }}"></div>
                             <div class="card-content">
                               <h3>First</h3>
                               <div class="text">

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +29,9 @@ Route::get('/profile', function () {
     return view('pages.trainee.profile');
 })->name('profile');
 Route::get('language/{language}', [LanguageController::class, 'index'])->name('language');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
