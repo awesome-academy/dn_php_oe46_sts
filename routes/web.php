@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\CourseController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,7 @@ Route::get('/detailReport', function () {
 })->name('detailReport');
 Route::resource('listCourse', CourseController::class);
 Route::get('language/{language}', [LanguageController::class, 'index'])->name('language');
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
