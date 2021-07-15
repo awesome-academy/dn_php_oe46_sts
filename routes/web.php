@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\CourseController;
@@ -44,3 +45,7 @@ Route::resource('listCourse', CourseController::class)->only([
 ]);
 
 Route::get('language/{language}', [LanguageController::class, 'index'])->name('language');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
