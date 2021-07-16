@@ -3,7 +3,7 @@
         <div class="navbar-header" data-logobg="skin6">
             <a class="navbar-brand" href="dashboard.html">
                 <b class="logo-text">
-                    <img src="{{ asset('images/large/sunLogo.png') }}" alt="homepage" />
+                    <img src="{{ asset('images/users/sunLogo.png') }}" alt="homepage" />
                 </b>
                
             </a>

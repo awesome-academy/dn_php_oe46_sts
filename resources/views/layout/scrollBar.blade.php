@@ -4,6 +4,13 @@
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
                 <li class="sidebar-item pt-2">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('user.index') }}"
+                        aria-expanded="false">
+                        <i class="far fa-clock" aria-hidden="true"></i>
+                        <span class="hide-menu">{{ trans('messages.User') }}</span>
+                    </a>
+                </li>
+                <li class="sidebar-item pt-2">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home') }}"
                         aria-expanded="false">
                         <i class="far fa-clock" aria-hidden="true"></i>
